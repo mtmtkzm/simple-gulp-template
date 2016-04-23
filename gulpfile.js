@@ -76,9 +76,9 @@ var copyPaths = [
 /* Copy
 ****************************** */
 gulp.task('copy', function() {
-	for(var i=0; i<copyPaths.length; i++){
-		gulp.src(copyPaths[i].from).pipe(gulp.dest(copyPaths[i].to));
-	}
+	Object.keys(copyPaths).forEach(function (key) {
+		gulp.src(copyPaths[key].from).pipe(gulp.dest(copyPaths[key].to));
+	});
 });
 
 /* Watch
