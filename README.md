@@ -1,4 +1,4 @@
-UNITED用のGulpタスクを作ります。内容物は主に、Sass・EJS。
+内容物は主に、Sass・EJS。
 
 ## 制作時の環境
 - npm 3.7.3
